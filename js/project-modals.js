@@ -17,6 +17,9 @@ const projectOpenBtnItTest = document.querySelector('#team-project-it-test-btn')
 const projectModals = [projectModalFullStack, projectModalWeddingProject, projectModaProTest, projectModalProjectGoit, projectModalQuestify, projectModalItTest];
 const projectBtns = [projectOpenBtnFullStack, projectOpenBtnWeddingProject, projectOpenBtnProTest, projectOpenBtnProjectGoit, projectOpenBtnQuestify, projectOpenBtnItTest];
 
+const MODAL_ACTIVE_CLASS = 'modal-active';
+const BODY_SCROLL_DISABLE_CLASS = 'body-scroll-disable';
+
 projectBtns.forEach((btn, index) => {
     const projectModal = projectModals[index];
 
