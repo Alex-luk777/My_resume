@@ -1,10 +1,8 @@
+const mobileMenu = document.querySelector('#mobile-menu');
+const myVideoModal = document.querySelector('#my-video-modal');
+
 const mobileMenuBtn = document.querySelector('#mobile-menu-btn');
 const myVideoBtn = document.querySelector('#my-video-btn');
-const discussprojectBtn = document.querySelector('#discuss-project-btn');
-
-const myVideoModal = document.querySelector('#my-video-modal');
-const mobileMenu = document.querySelector('#mobile-menu');
-const discussproject = document.querySelector('#discuss-project');
 
 const modalCloseBtns = document.querySelectorAll('.modal-close-btn, .request-close-btn');
 
@@ -78,3 +76,5 @@ function hideModalOnMobileMenuElementsClick() {
         });
     }
 }
+console.log(myVideoBtn);
+console.log(myVideoModal);
