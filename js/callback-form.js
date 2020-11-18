@@ -1,9 +1,9 @@
 const callbackForm = document.querySelector('.callback-form-container');
-const callbackModal = document.querySelector('#discuss-project');
+const requestReceivedModal = document.querySelector('#request-received');
 
-const userName = document.querySelector('#callback-form-name');
-const userMail = document.querySelector('#callback-form-mail');
-const userPhone = document.querySelector('#callback-form-phone');
+const userName = document.querySelector('#callback-form-input-name');
+const userMail = document.querySelector('#callback-form-input-email');
+const userPhone = document.querySelector('#callback-form-input-phone');
 
 userPhone.addEventListener('click', function() {
     if (!userPhone.value.trim()) {
@@ -16,7 +16,6 @@ userPhone.addEventListener('blur', function() {
         userPhone.value = '';
     }
 });
-
 
 callbackForm.addEventListener('submit', function(event) {
     event.preventDefault();
@@ -41,12 +40,12 @@ callbackForm.addEventListener('submit', function(event) {
     userMail.value = '';
     userPhone.value = '';
 
-    callbackModal.classList.add('modal-active');
+    requestReceivedModal.classList.add('modal-active');
     setTimeout(function() {
-        callbackModal.classList.remove('modal-active');
+        requestReceivedModal.classList.remove('modal-active');
     }, 2000);
-})
 
+});
 
 function isPhoneValid(phone = '') {
     const regexp = /(\+38)?\(?\d{3}\)?[\s\.-]?(\d{7}|\d{3}[\s\.-]\d{2}[\s\.-]\d{2}|\d{3}-\d{4})/;
