@@ -85,7 +85,7 @@ body {
     border: none;
     cursor: pointer;
     text-decoration: none;
-    transition: var(--animation-transition))
+    transition: var(--animation-transition);
 }
 
 .accent-btn:hover {
@@ -137,6 +137,7 @@ body {
 .modal-active {
     opacity: 1;
     pointer-events: all;
+    display: block;
 }
 
 .modal-close-btn {
@@ -260,6 +261,7 @@ body {
     background: var(--modal-bgd-dark);
     flex-flow: column;
     height: 100%;
+    right: 0;
 }
 
 .request-text-container {
@@ -1519,7 +1521,7 @@ body {
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
-        margin-right: ;
+        margin-right: 0;
     }
     .footer-1 {
         justify-content: center;
