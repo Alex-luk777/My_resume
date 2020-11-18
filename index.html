@@ -31,7 +31,7 @@
                     <a href="#calculator " class="front-page-menu-item ">COST CALCULATOR</a>
                     <a href="#contacts " class="front-page-menu-item ">CONTACTS</a>
                 </div>
-                <a href="#callback-form-name" class="hire-me-btn">
+                <a href="#callback-form-input-name" class="hire-me-btn">
                     — HIRE ME</a>
                 <div class="mobile-element tablet-element">
                     <a href="" class="mobile-menu" id="mobile-menu-btn"><i class="fas fa-bars"></i></a>
@@ -288,19 +288,25 @@
             </div>
         </div>
     </section>
+
+    <!-----Callback form---->
+
     <section class="container">
         <form action="" class="callback-form-container">
             <h3 class="callback-form-title " data-aos="flip-left">/Are you minding [a project?]</h3>
             <p class="callback-form-descr ">Leave a request to discuss the task and technical requirements
             </p>
-            <div class="callback-form-input-container">
-                <input type="text " class="callback-form-input " placeholder="Name " id="callback-form-name " />
-                <input type="text " class="callback-form-input " placeholder="email " id="callback-form-mail " />
-                <input type="tel " class="callback-form-input " placeholder="+380 (___) ___-__-__ " id="callback-form-phone " />
+            <div class="callback-form-input-container" id="callback-form">
+                <input type="text" class="callback-form-input" placeholder="Name" id="callback-form-input-name" />
+                <input type="text" class="callback-form-input" placeholder="email" id="callback-form-input-email" />
+                <input type="tel" class="callback-form-input" placeholder="+380 (___) ___-__-__" id="callback-form-input-phone" />
             </div>
-            <input type="submit " id="discuss-project-btn " class="accent-btn callback-form-btn " value="Discuss the project — ">
+            <input type="submit" id="discuss-project-btn" class="accent-btn callback-form-btn" value="Discuss the project —">
         </form>
     </section>
+
+    <!-----Calculator---->
+
     <section class="calculator" id="calculator">
         <div class="container">
             <div class="calculator-info-container">
@@ -439,6 +445,7 @@
 
     <!-----Modals------>
     <div class="modals-wrapper ">
+
         <!----Mobile menu----->
         <div class="modal modal-mobile-menu " id="mobile-menu">
             <div class="modal-mobile-content ">
@@ -459,26 +466,26 @@
             </div>
 
         </div>
-        <div class="modal">
-            <div class="my-video-container"  id="my-video-modal">
-                <i class="fas fa-times modal-close-btn mobile-menu-close-btn grey-close-btn "></i>
-                <video class="my-video-content " src="video.mp4 " controls autoplay></video>
-            </div>
 
+        <!----My video----->
+        <div class="modal my-video-container modal-area-bgd"  id="my-video-modal">
+                <i class="fas fa-times modal-close-btn mobile-menu-close-btn grey-close-btn "></i>
+                <video class="my-video-content " src="video.mp4 " controls></video>
         </div>
-        <div class="modal" id="discuss-project">
-            <div class="request-container modal-area-bgd ">
-                <div class="request-text-container modal-area-content ">
-                    <i class="fas fa-times request-close-btn "></i>
-                    <p class="thanks ">{THANKS}</p>
-                    <p class="request ">I`ve received<br> your request/</p>
-                    <p class="will-contact ">I will contact you soon =)</p>
-                </div>
+
+        <!----Discuss project----->
+        <div class="modal request-container modal-area-bgd " id="request-received">
+            <div class="request-text-container modal-area-content ">
+                <i class="fas fa-times request-close-btn "></i>
+                <p class="thanks ">{THANKS}</p>
+                <p class="request ">I`ve received<br> your request/</p>
+                <p class="will-contact ">I will contact you soon =)</p>
             </div>
         </div>
+        
         <!-- PERSONAL PROJECTS FULL STACK -->
 
-        <div class="modal project-modal modal-area-bgd" id="personal-project-full-stack ">
+        <div class="modal project-modal modal-area-bgd" id="personal-project-full-stack">
             <div class="project-modal-container modal-area-content ">
                 <i class="fas fa-times modal-close-btn "></i>
 
@@ -698,8 +705,8 @@
                 система сама ставит перед пользователем.
                 </p>
             </div>
-            </div>
         </div>
+        
         
         <!-- TEAM PROJECTS TEST IT -->
         
@@ -736,15 +743,14 @@
                         Web-приложение, которое поможет родителям определиться к какой профессии в IT склонен их ребенок.
                     </p>
                 </div>
-            </div>
         </div>
-
     </div>
 
+    </div>
+    <script src="js/modals.js"></script>
+    <script src="js/project-modals.js"></script>
     <script src="js/choices.min.js"></script>
     <script src="js/calculator.js"></script>
-    <script src="js/project-modals.js"></script>
-    <script src="js/modals.js"></script>
     <script src="js/callback-form.js"></script>
     <script src="js/aos.js" ></script>
     <script src="js/animation-on-scroll.js"></script>
