@@ -76,5 +76,3 @@ function hideModalOnMobileMenuElementsClick() {
         });
     }
 }
-console.log(myVideoBtn);
-console.log(myVideoModal);
