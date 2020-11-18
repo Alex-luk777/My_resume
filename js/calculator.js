@@ -70,13 +70,16 @@ function calculateSum() {
 }
 
 function renderSum(sum) {
+    const costEl = document.querySelector(".calculator-form-total");
     const costElement = document.querySelector(".calculator-form-total-cost");
 
-    costElement.textContent = 'Calculating...';
+    costEl.textContent = 'Calculating...';
 
     setTimeout(function() {
         costElement.textContent = sum + "$";
-    }, 2000);
+        costEl.textContent = 'Cost:';
+    }, 1000);
+
 }
 
 function convertCartOptionToPrice(option) {
